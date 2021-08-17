@@ -1,0 +1,19 @@
+[package]
+name = "clashup"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+structopt = "0.3"
+nix = "0.22.0"
+dirs = "3.0"
+tempfile = "3"
+serde = { version = "1.0", features = ["derive"] }
+
+[dependencies.confy]
+git = "https://github.com/rust-cli/confy"
+features = ["yaml_conf"]
+default-features = false
+
